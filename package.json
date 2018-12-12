@@ -1,0 +1,36 @@
+{
+  "name": "nuxt-firebase-blog-app",
+  "version": "1.0.0",
+  "description": "Nuxt.js blog app using Firebase Authentication and Firestore",
+  "author": "KarageAgeta <yoko.karasaki@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "cross-env": "^5.2.0",
+    "firebase": "^5.7.0",
+    "htmlspecialchars": "^1.0.5",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "2.6.2",
+    "prettier": "1.14.3",
+    "node-sass": "^4.9.3",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "sass-loader": "^7.1.0"
+  }
+}

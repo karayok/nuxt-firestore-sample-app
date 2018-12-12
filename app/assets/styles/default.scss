@@ -1,0 +1,88 @@
+html {
+  color: $text-color-primary;
+  background: $background-light;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main,
+section,
+article {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (max-width: 575px) {
+  main {
+    padding: $spacing-x-small;
+  }
+}
+
+@media (min-width: 576px) {
+  main {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1140px;
+  }
+}
+
+.elevation-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.elevation-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.elevation-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+button {
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: $spacing-xx-small $spacing-x-small;
+
+  &.light {
+    border: $primary-color;
+    background: rgba(255,255,255,0.5);
+    color: $primary-color-dark;
+
+    &:hover {
+      color: $text-color-light;
+      background: rgba(255,255,255,0.2);
+    }
+  }
+}
